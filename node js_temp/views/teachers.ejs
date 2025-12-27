@@ -1,0 +1,16 @@
+// views/teachers.ejs
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>قائمة المعلمين</title>
+</head>
+<body>
+    <h1>قائمة المعلمين</h1>
+    <ul>
+        <% teachers.forEach(function(teacher) { %>
+            <li><%= teacher.name %> - <%= teacher.dept %> (ID: <%= teacher.id %>)</li>
+        <% }); %>
+    </ul>
+</body>
+</html>
